@@ -17,8 +17,8 @@
         "col_protocols": {
           "type": "menu_column",
           "settings": {
-            "title": "protocols",
-            "menu": ""
+            "title": "",
+            "menu": "protocols"
           }
         },
         "col_company": {
