@@ -1,0 +1,122 @@
+{
+  "sections": {
+    "hero": {
+      "type": "peptly-page-hero",
+      "settings": {
+        "label": "protocol",
+        "heading": "cjc-1295 / ipamorelin",
+        "subheading": "a peptide combination that supports natural growth hormone release, improved sleep quality, and anti-aging benefits. prescribed by a licensed physician, compounded by a verified pharmacy.",
+        "price": "starting at $200/month",
+        "button_label": "start the questionnaire",
+        "button_link": ""
+      }
+    },
+    "what_it_is": {
+      "type": "peptly-richtext",
+      "settings": {
+        "heading": "what it is",
+        "body": "<p>CJC-1295 and Ipamorelin are two peptides that work together to stimulate the body's natural production of growth hormone. They are typically prescribed as a combination because they act through complementary pathways, producing a more sustained and physiologically natural growth hormone release than either peptide alone.</p><p>CJC-1295 is a growth hormone-releasing hormone (GHRH) analog that extends the half-life of natural growth hormone signaling. Ipamorelin is a selective growth hormone secretagogue that triggers growth hormone release from the pituitary gland without significantly affecting cortisol or prolactin levels.</p><p>Together, they are studied for their potential benefits in sleep quality, body composition, recovery, and age-related changes in growth hormone levels.</p>",
+        "alt_bg": false
+      }
+    },
+    "what_used_for": {
+      "type": "peptly-bullet-list",
+      "settings": {
+        "heading": "what it's used for",
+        "intro": "CJC-1295/Ipamorelin has been studied in the context of the following applications. Your physician will determine if it is appropriate for your specific situation.",
+        "alt_bg": true
+      },
+      "blocks": {
+        "use_1": { "type": "item", "settings": { "text": "improved sleep quality and deeper restorative sleep cycles" } },
+        "use_2": { "type": "item", "settings": { "text": "support for lean body composition and reduced body fat" } },
+        "use_3": { "type": "item", "settings": { "text": "faster recovery from exercise and physical stress" } },
+        "use_4": { "type": "item", "settings": { "text": "skin elasticity and collagen production" } },
+        "use_5": { "type": "item", "settings": { "text": "bone density support" } },
+        "use_6": { "type": "item", "settings": { "text": "cognitive clarity and energy levels" } },
+        "use_7": { "type": "item", "settings": { "text": "age-related growth hormone decline" } }
+      },
+      "block_order": ["use_1", "use_2", "use_3", "use_4", "use_5", "use_6", "use_7"]
+    },
+    "how_works": {
+      "type": "peptly-richtext",
+      "settings": {
+        "heading": "how it works",
+        "body": "<p>The CJC-1295/Ipamorelin combination works by amplifying the body's natural pulsatile release of growth hormone. CJC-1295 extends the signaling window for growth hormone release, while Ipamorelin provides a targeted trigger at the pituitary gland.</p><p>This dual-mechanism approach produces growth hormone elevation that mimics the body's natural patterns rather than flooding the system with exogenous growth hormone. The result is a more sustained, lower-risk approach to growth hormone optimization compared to direct HGH administration.</p>",
+        "alt_bg": false
+      }
+    },
+    "what_to_expect": {
+      "type": "peptly-timeline",
+      "settings": {
+        "heading": "what to expect",
+        "intro": "Individual responses vary. The following is a general timeline based on reported patient experiences.",
+        "alt_bg": true
+      },
+      "blocks": {
+        "t1": { "type": "milestone", "settings": { "period": "week 1–2", "title": "improved sleep", "text": "PLACEHOLDER: many patients report noticeably deeper and more restorative sleep within the first 1–2 weeks. this is often the first change patients notice." } },
+        "t2": { "type": "milestone", "settings": { "period": "week 3–6", "title": "recovery and energy", "text": "PLACEHOLDER: patients commonly report improved energy levels, faster workout recovery, and a general sense of improved wellbeing." } },
+        "t3": { "type": "milestone", "settings": { "period": "week 6–12", "title": "body composition changes", "text": "PLACEHOLDER: with consistent use, patients may notice changes in body composition, skin quality, and overall vitality." } },
+        "t4": { "type": "milestone", "settings": { "period": "month 3–6", "title": "long-term optimization", "text": "PLACEHOLDER: continued protocol use under physician supervision. many patients choose to continue long-term for sustained anti-aging and recovery benefits." } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4"]
+    },
+    "not_for": {
+      "type": "peptly-richtext",
+      "settings": {
+        "heading": "who it's not for",
+        "body": "<p>CJC-1295/Ipamorelin may not be appropriate for everyone. Your physician will evaluate your health history during the consultation. Generally, this protocol is not recommended for individuals who are pregnant or nursing, have active cancer or a history of certain cancers, have uncontrolled diabetes, or are under 18 years of age.</p><p>Because this protocol affects growth hormone levels, it requires careful physician oversight. Your prescribing physician will monitor your response and adjust dosing as needed.</p>",
+        "alt_bg": false
+      }
+    },
+    "pricing": {
+      "type": "peptly-richtext",
+      "settings": {
+        "heading": "pricing",
+        "body": "<p>CJC-1295/Ipamorelin starts at $200 per month. This includes your initial physician consultation, your compounded prescription, free shipping, and ongoing access to your prescribing physician for dosing adjustments or questions.</p><p>There are no hidden fees, no enrollment costs, and no long-term contracts. You can pause or cancel at any time.</p>",
+        "alt_bg": true
+      }
+    },
+    "faq": {
+      "type": "peptly-faq",
+      "settings": {
+        "heading": "frequently asked questions about cjc-1295 / ipamorelin",
+        "alt_bg": false
+      },
+      "blocks": {
+        "q1": { "type": "question", "settings": { "question": "how is cjc-1295/ipamorelin administered?", "answer": "<p>PLACEHOLDER: this protocol is typically administered via subcutaneous injection before bedtime to align with the body's natural growth hormone release cycle.</p>" } },
+        "q2": { "type": "question", "settings": { "question": "is this the same as taking hgh?", "answer": "<p>PLACEHOLDER: no. CJC-1295/Ipamorelin stimulates your body's own growth hormone production rather than introducing exogenous growth hormone. this approach is considered lower-risk and more physiologically natural.</p>" } },
+        "q3": { "type": "question", "settings": { "question": "are there side effects?", "answer": "<p>PLACEHOLDER: some patients report mild flushing, headache, or water retention during the first week. these effects are typically transient. your physician will discuss potential side effects during consultation.</p>" } },
+        "q4": { "type": "question", "settings": { "question": "how long should I stay on this protocol?", "answer": "<p>PLACEHOLDER: many patients use CJC-1295/Ipamorelin on an ongoing basis for sustained benefits. your physician will recommend a duration based on your goals and response.</p>" } },
+        "q5": { "type": "question", "settings": { "question": "can I combine this with other protocols?", "answer": "<p>PLACEHOLDER: some patients use CJC-1295/Ipamorelin alongside BPC-157 or other protocols. your physician will evaluate whether combination therapy is appropriate.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5"]
+    },
+    "cta": {
+      "type": "peptly-cta",
+      "settings": {
+        "heading": "ready to start cjc-1295 / ipamorelin?",
+        "subheading": "take the questionnaire to see if this protocol is right for you. it takes 5 minutes and there's no commitment until your physician approves your protocol.",
+        "button_label": "start the questionnaire",
+        "button_link": ""
+      }
+    },
+    "trust_bar": {
+      "type": "peptly-trust-bar",
+      "settings": {
+        "text": "physician-supervised. pharmacy-compounded. delivered to your door."
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "what_it_is",
+    "what_used_for",
+    "how_works",
+    "what_to_expect",
+    "not_for",
+    "pricing",
+    "faq",
+    "cta",
+    "trust_bar"
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "sections": {
+    "hero": {
+      "type": "peptly-page-hero",
+      "settings": {
+        "label": "",
+        "heading": "about peptly",
+        "subheading": "we built peptly because peptide therapy should be legitimate, transparent, and accessible.",
+        "price": "",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "story": {
+      "type": "peptly-richtext",
+      "settings": {
+        "heading": "our story",
+        "body": "<p>PLACEHOLDER: peptly was founded in [year] by [founders] after experiencing firsthand how difficult it was to access legitimate peptide therapy at a fair price.</p><p>PLACEHOLDER: the peptide therapy market is broken. on one side, gray-market vendors sell unregulated research chemicals with no physician oversight and no quality control. on the other, concierge clinics charge $500–1,500 per month for the same compounds, wrapped in overhead that prices out the people who need them most.</p><p>PLACEHOLDER: we started peptly to offer a third option: physician-supervised, pharmacy-compounded peptide therapy at a price that makes sense. no shortcuts on quality, no markup for exclusivity.</p>",
+        "alt_bg": false
+      }
+    },
+    "principles": {
+      "type": "peptly-principles",
+      "settings": {
+        "heading": "what we believe",
+        "alt_bg": true
+      },
+      "blocks": {
+        "p1": {
+          "type": "principle",
+          "settings": {
+            "title": "physician oversight is non-negotiable",
+            "text": "PLACEHOLDER: every prescription should be written by a licensed physician who has reviewed your health history. there are no shortcuts to safe prescribing."
+          }
+        },
+        "p2": {
+          "type": "principle",
+          "settings": {
+            "title": "quality should not require wealth",
+            "text": "PLACEHOLDER: pharmacy-compounded, third-party-tested peptide therapy should be accessible to anyone who qualifies, not just those who can afford concierge pricing."
+          }
+        },
+        "p3": {
+          "type": "principle",
+          "settings": {
+            "title": "transparency builds trust",
+            "text": "PLACEHOLDER: we publish our pricing, name our physicians, identify our pharmacy partner, and make purity certificates available on request. if something matters, we make it visible."
+          }
+        },
+        "p4": {
+          "type": "principle",
+          "settings": {
+            "title": "we don't overpromise",
+            "text": "PLACEHOLDER: peptide therapy is a legitimate medical treatment with real evidence behind it. but it is not a miracle, and we will never describe it as one. we let the science and the physician-patient relationship speak for themselves."
+          }
+        }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"]
+    },
+    "medical_director": {
+      "type": "peptly-team-member",
+      "settings": {
+        "heading": "our medical director",
+        "name": "PLACEHOLDER: Dr. [name]",
+        "credentials": "PLACEHOLDER: MD, board-certified in [specialty]",
+        "bio": "<p>PLACEHOLDER: a paragraph about the medical director's background, training, and clinical experience. include where they studied, how many years they have practiced, and what drew them to peptide therapy and to peptly specifically.</p><p>PLACEHOLDER: a second paragraph about their approach to patient care and their role in overseeing peptly's clinical protocols.</p>",
+        "alt_bg": false
+      }
+    },
+    "pharmacy": {
+      "type": "peptly-richtext",
+      "settings": {
+        "heading": "our pharmacy partner",
+        "body": "<p>PLACEHOLDER: peptly partners with [pharmacy name], a [state]-based compounding pharmacy that is licensed, inspected, and compliant with USP 797 and USP 800 standards for sterile and hazardous drug compounding.</p><p>PLACEHOLDER: every batch of peptides is tested by an independent third-party laboratory for identity, potency, sterility, and endotoxin levels. certificates of analysis are available to patients on request.</p><p>PLACEHOLDER: we chose [pharmacy name] because of their commitment to quality, transparency, and patient safety. they compound medications for thousands of patients nationwide and maintain a track record of regulatory compliance.</p>",
+        "alt_bg": true
+      }
+    },
+    "press": {
+      "type": "peptly-richtext",
+      "settings": {
+        "heading": "press and mentions",
+        "body": "<p>PLACEHOLDER: this section will feature logos and links from press coverage once available. coming soon.</p>",
+        "alt_bg": false
+      }
+    },
+    "cta": {
+      "type": "peptly-cta",
+      "settings": {
+        "heading": "ready to start?",
+        "subheading": "the questionnaire takes 5 minutes. there's no commitment until your physician approves your protocol.",
+        "button_label": "start the questionnaire",
+        "button_link": ""
+      }
+    },
+    "trust_bar": {
+      "type": "peptly-trust-bar",
+      "settings": {
+        "text": "physician-supervised. pharmacy-compounded. delivered to your door."
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "story",
+    "principles",
+    "medical_director",
+    "pharmacy",
+    "press",
+    "cta",
+    "trust_bar"
+  ]
+}

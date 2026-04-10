@@ -1,0 +1,121 @@
+{
+  "sections": {
+    "hero": {
+      "type": "peptly-page-hero",
+      "settings": {
+        "label": "protocol",
+        "heading": "tb-500",
+        "subheading": "a peptide that supports muscle repair, flexibility, and recovery from sports-related injuries. prescribed by a licensed physician, compounded by a verified pharmacy.",
+        "price": "starting at $150/month",
+        "button_label": "start the questionnaire",
+        "button_link": ""
+      }
+    },
+    "what_it_is": {
+      "type": "peptly-richtext",
+      "settings": {
+        "heading": "what it is",
+        "body": "<p>TB-500 is a synthetic version of Thymosin Beta-4, a naturally occurring peptide found in virtually all human and animal cells. Thymosin Beta-4 plays a central role in tissue repair, cell migration, and the formation of new blood vessels.</p><p>TB-500 has been studied for its potential to accelerate recovery from muscle injuries, improve flexibility, and reduce inflammation. It is particularly relevant for athletes and active individuals dealing with muscle strains, tears, or chronic tightness.</p><p>At peptly, TB-500 is prescribed by licensed physicians and compounded by verified pharmacies with third-party purity testing on every batch.</p>",
+        "alt_bg": false
+      }
+    },
+    "what_used_for": {
+      "type": "peptly-bullet-list",
+      "settings": {
+        "heading": "what it's used for",
+        "intro": "TB-500 has been studied in the context of the following applications. Your physician will determine if it is appropriate for your specific situation.",
+        "alt_bg": true
+      },
+      "blocks": {
+        "use_1": { "type": "item", "settings": { "text": "muscle strain and tear recovery" } },
+        "use_2": { "type": "item", "settings": { "text": "improved flexibility and range of motion" } },
+        "use_3": { "type": "item", "settings": { "text": "reduced muscle inflammation and soreness" } },
+        "use_4": { "type": "item", "settings": { "text": "sports injury rehabilitation" } },
+        "use_5": { "type": "item", "settings": { "text": "chronic muscle tightness and adhesions" } },
+        "use_6": { "type": "item", "settings": { "text": "post-surgical muscle recovery" } }
+      },
+      "block_order": ["use_1", "use_2", "use_3", "use_4", "use_5", "use_6"]
+    },
+    "how_works": {
+      "type": "peptly-richtext",
+      "settings": {
+        "heading": "how it works",
+        "body": "<p>TB-500 promotes healing through several mechanisms. It upregulates actin, a protein essential for cell structure and movement, which helps cells migrate to sites of injury more effectively. It also promotes angiogenesis, the growth of new blood vessels, which improves blood flow to damaged areas.</p><p>Additionally, TB-500 has been shown to reduce inflammatory cytokines while promoting anti-inflammatory pathways. This combination of enhanced cell migration, improved blood supply, and reduced inflammation creates favorable conditions for tissue repair.</p>",
+        "alt_bg": false
+      }
+    },
+    "what_to_expect": {
+      "type": "peptly-timeline",
+      "settings": {
+        "heading": "what to expect",
+        "intro": "Individual responses vary. The following is a general timeline based on reported patient experiences.",
+        "alt_bg": true
+      },
+      "blocks": {
+        "t1": { "type": "milestone", "settings": { "period": "week 1–2", "title": "reduced inflammation", "text": "PLACEHOLDER: many patients report reduced soreness and inflammation in the affected area within the first two weeks." } },
+        "t2": { "type": "milestone", "settings": { "period": "week 3–4", "title": "improved flexibility", "text": "PLACEHOLDER: patients commonly notice improved flexibility and range of motion, particularly in chronically tight areas." } },
+        "t3": { "type": "milestone", "settings": { "period": "week 5–8", "title": "functional recovery", "text": "PLACEHOLDER: significant improvement in muscle function and strength. many patients return to full training capacity during this period." } },
+        "t4": { "type": "milestone", "settings": { "period": "week 8–12", "title": "protocol review", "text": "PLACEHOLDER: your physician reviews your progress and determines whether to continue, adjust, or conclude the protocol." } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4"]
+    },
+    "not_for": {
+      "type": "peptly-richtext",
+      "settings": {
+        "heading": "who it's not for",
+        "body": "<p>TB-500 may not be appropriate for everyone. Your physician will evaluate your health history during the consultation. Generally, TB-500 is not recommended for individuals who are pregnant or nursing, have active cancer or a history of certain cancers, or are under 18 years of age.</p><p>If TB-500 is not right for you, your physician may suggest an alternative protocol such as BPC-157, which addresses some overlapping applications through different mechanisms.</p>",
+        "alt_bg": false
+      }
+    },
+    "pricing": {
+      "type": "peptly-richtext",
+      "settings": {
+        "heading": "pricing",
+        "body": "<p>TB-500 starts at $150 per month. This includes your initial physician consultation, your compounded prescription, free shipping, and ongoing access to your prescribing physician for dosing adjustments or questions.</p><p>There are no hidden fees, no enrollment costs, and no long-term contracts. You can pause or cancel at any time.</p>",
+        "alt_bg": true
+      }
+    },
+    "faq": {
+      "type": "peptly-faq",
+      "settings": {
+        "heading": "frequently asked questions about tb-500",
+        "alt_bg": false
+      },
+      "blocks": {
+        "q1": { "type": "question", "settings": { "question": "how is tb-500 administered?", "answer": "<p>PLACEHOLDER: TB-500 is typically administered via subcutaneous injection. your physician will provide detailed instructions and your kit will include everything you need.</p>" } },
+        "q2": { "type": "question", "settings": { "question": "are there side effects?", "answer": "<p>PLACEHOLDER: TB-500 is generally well-tolerated. some patients report mild irritation at the injection site or temporary head rush. your physician will discuss potential side effects during consultation.</p>" } },
+        "q3": { "type": "question", "settings": { "question": "how is tb-500 different from bpc-157?", "answer": "<p>PLACEHOLDER: both peptides support tissue repair, but through different mechanisms. BPC-157 is more focused on gut healing and tendon/ligament repair, while TB-500 is particularly effective for muscle repair and flexibility. some patients use both together.</p>" } },
+        "q4": { "type": "question", "settings": { "question": "how long does a typical protocol last?", "answer": "<p>PLACEHOLDER: most TB-500 protocols run 8–12 weeks. your physician will recommend a duration based on your condition and response.</p>" } },
+        "q5": { "type": "question", "settings": { "question": "can I train while on tb-500?", "answer": "<p>PLACEHOLDER: yes, most patients continue training while on TB-500. your physician will provide guidance on activity levels based on your specific condition.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5"]
+    },
+    "cta": {
+      "type": "peptly-cta",
+      "settings": {
+        "heading": "ready to start tb-500?",
+        "subheading": "take the questionnaire to see if tb-500 is right for you. it takes 5 minutes and there's no commitment until your physician approves your protocol.",
+        "button_label": "start the questionnaire",
+        "button_link": ""
+      }
+    },
+    "trust_bar": {
+      "type": "peptly-trust-bar",
+      "settings": {
+        "text": "physician-supervised. pharmacy-compounded. delivered to your door."
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "what_it_is",
+    "what_used_for",
+    "how_works",
+    "what_to_expect",
+    "not_for",
+    "pricing",
+    "faq",
+    "cta",
+    "trust_bar"
+  ]
+}

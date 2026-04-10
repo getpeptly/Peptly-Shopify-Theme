@@ -1,0 +1,98 @@
+{
+  "sections": {
+    "hero": {
+      "type": "peptly-page-hero",
+      "settings": {
+        "label": "",
+        "heading": "frequently asked questions",
+        "subheading": "everything you need to know about peptly, peptide therapy, and how we work.",
+        "price": "",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "faq": {
+      "type": "peptly-faq",
+      "settings": {
+        "heading": "",
+        "alt_bg": false
+      },
+      "blocks": {
+        "cat_about": { "type": "category", "settings": { "title": "about peptly" } },
+        "q_a1": { "type": "question", "settings": { "question": "what is peptly?", "answer": "<p>PLACEHOLDER: peptly is a telehealth platform that connects you with licensed physicians who prescribe compounded peptide therapy. we handle the entire process from consultation to delivery.</p>" } },
+        "q_a2": { "type": "question", "settings": { "question": "is peptly a pharmacy?", "answer": "<p>PLACEHOLDER: no. peptly is a telehealth platform, not a pharmacy or medical practice. prescriptions are written by independent licensed physicians and filled by our verified compounding pharmacy partner.</p>" } },
+        "q_a3": { "type": "question", "settings": { "question": "how is peptly different from buying peptides online?", "answer": "<p>PLACEHOLDER: peptides sold online as \"research chemicals\" are unregulated and untested. peptly provides physician-prescribed, pharmacy-compounded peptides with third-party purity testing on every batch.</p>" } },
+        "q_a4": { "type": "question", "settings": { "question": "what states do you operate in?", "answer": "<p>PLACEHOLDER: peptly is currently available in [list of states]. we are actively expanding to additional states. enter your state in the questionnaire to check availability.</p>" } },
+        "q_a5": { "type": "question", "settings": { "question": "how do I contact peptly?", "answer": "<p>PLACEHOLDER: you can reach us at support@peptly.com or through the contact form on our website. response time is typically within 24 hours on business days.</p>" } },
+
+        "cat_therapy": { "type": "category", "settings": { "title": "about peptide therapy" } },
+        "q_t1": { "type": "question", "settings": { "question": "what are peptides?", "answer": "<p>PLACEHOLDER: peptides are short chains of amino acids that occur naturally in the body. they act as signaling molecules that can influence specific biological processes like tissue repair, hormone regulation, and immune response.</p>" } },
+        "q_t2": { "type": "question", "settings": { "question": "are peptides safe?", "answer": "<p>PLACEHOLDER: when prescribed by a physician and compounded by a licensed pharmacy, peptide therapy has a favorable safety profile. like any medical treatment, there are potential side effects, which your physician will discuss with you.</p>" } },
+        "q_t3": { "type": "question", "settings": { "question": "are peptides fda-approved?", "answer": "<p>PLACEHOLDER: the peptides we prescribe are not individually FDA-approved as drugs. they are prescribed by licensed physicians as compounded medications, which is a legal and regulated practice in the United States.</p>" } },
+        "q_t4": { "type": "question", "settings": { "question": "are peptides steroids?", "answer": "<p>PLACEHOLDER: no. peptides are amino acid chains, not anabolic steroids. they work through different mechanisms and have a different risk profile.</p>" } },
+        "q_t5": { "type": "question", "settings": { "question": "how are peptides administered?", "answer": "<p>PLACEHOLDER: most peptide protocols involve subcutaneous injection, which is a small injection just under the skin. your kit includes everything you need and your physician provides detailed instructions.</p>" } },
+        "q_t6": { "type": "question", "settings": { "question": "how long does peptide therapy take to work?", "answer": "<p>PLACEHOLDER: results vary by individual and protocol. most patients report initial changes within 1–2 weeks, with more significant results over 4–12 weeks.</p>" } },
+        "q_t7": { "type": "question", "settings": { "question": "can I take peptides with other medications?", "answer": "<p>PLACEHOLDER: your physician will review your current medications during the consultation to check for interactions. always disclose all medications and supplements you are taking.</p>" } },
+        "q_t8": { "type": "question", "settings": { "question": "what is compounding?", "answer": "<p>PLACEHOLDER: compounding is the process of preparing a medication specifically for an individual patient based on a physician's prescription. compounding pharmacies are licensed and regulated facilities that prepare medications to exact specifications.</p>" } },
+
+        "cat_protocols": { "type": "category", "settings": { "title": "about the protocols" } },
+        "q_p1": { "type": "question", "settings": { "question": "which protocol is right for me?", "answer": "<p>PLACEHOLDER: your physician will recommend a protocol based on your health history and goals. the questionnaire helps your physician understand your needs and make an informed recommendation.</p>" } },
+        "q_p2": { "type": "question", "settings": { "question": "can I switch protocols?", "answer": "<p>PLACEHOLDER: yes. if your needs change or your physician recommends a different approach, you can switch protocols at any time. your physician will manage the transition.</p>" } },
+        "q_p3": { "type": "question", "settings": { "question": "can I combine multiple protocols?", "answer": "<p>PLACEHOLDER: some patients benefit from combination therapy. your physician will evaluate whether combining protocols is safe and appropriate for your situation.</p>" } },
+        "q_p4": { "type": "question", "settings": { "question": "what if a protocol doesn't work for me?", "answer": "<p>PLACEHOLDER: individual responses vary. if you are not seeing the expected results, your physician can adjust your dosing, switch your protocol, or recommend discontinuing therapy. there is no obligation to continue.</p>" } },
+        "q_p5": { "type": "question", "settings": { "question": "how long do protocols typically last?", "answer": "<p>PLACEHOLDER: most protocols run 8–12 weeks for an initial course. some patients continue on an ongoing basis for sustained benefits. your physician will recommend a duration based on your response.</p>" } },
+        "q_p6": { "type": "question", "settings": { "question": "do you offer protocols for women?", "answer": "<p>PLACEHOLDER: yes. while our initial focus has been on conditions common in active men, our physicians prescribe to eligible patients regardless of gender. take the questionnaire and your physician will evaluate your candidacy.</p>" } },
+
+        "cat_pricing": { "type": "category", "settings": { "title": "pricing and ordering" } },
+        "q_pr1": { "type": "question", "settings": { "question": "how much does peptly cost?", "answer": "<p>PLACEHOLDER: protocols start at $150/month for BPC-157 and TB-500, and $200/month for CJC-1295/Ipamorelin. every plan includes physician consultation, compounded prescription, shipping, and ongoing physician access.</p>" } },
+        "q_pr2": { "type": "question", "settings": { "question": "does insurance cover this?", "answer": "<p>PLACEHOLDER: most insurance plans do not cover compounded peptide therapy. peptly is designed to be affordable without insurance.</p>" } },
+        "q_pr3": { "type": "question", "settings": { "question": "can I cancel anytime?", "answer": "<p>PLACEHOLDER: yes. there are no contracts and no cancellation fees. pause or cancel through your account or by contacting support.</p>" } },
+        "q_pr4": { "type": "question", "settings": { "question": "when am I charged?", "answer": "<p>PLACEHOLDER: you are charged only after your physician writes your prescription. you are not charged for the questionnaire or physician review.</p>" } },
+        "q_pr5": { "type": "question", "settings": { "question": "do you accept HSA or FSA?", "answer": "<p>PLACEHOLDER: peptide therapy prescribed by a licensed physician may be eligible for HSA/FSA reimbursement. check with your plan administrator for specific eligibility.</p>" } },
+
+        "cat_safety": { "type": "category", "settings": { "title": "safety and side effects" } },
+        "q_s1": { "type": "question", "settings": { "question": "what are the common side effects?", "answer": "<p>PLACEHOLDER: side effects vary by protocol. common reports include mild injection site irritation, temporary flushing, or headache. your physician will discuss specific side effects for your protocol during consultation.</p>" } },
+        "q_s2": { "type": "question", "settings": { "question": "who should not take peptides?", "answer": "<p>PLACEHOLDER: peptide therapy is generally not recommended for individuals who are pregnant or nursing, have active cancer, or are under 18. your physician will evaluate your specific health history.</p>" } },
+        "q_s3": { "type": "question", "settings": { "question": "how do I know the peptides are pure?", "answer": "<p>PLACEHOLDER: every batch is tested by an independent third-party laboratory for identity, potency, sterility, and endotoxin levels. certificates of analysis are available on request.</p>" } },
+        "q_s4": { "type": "question", "settings": { "question": "what if I have an adverse reaction?", "answer": "<p>PLACEHOLDER: contact your prescribing physician immediately if you experience an unexpected reaction. physician contact information is included with every shipment.</p>" } },
+        "q_s5": { "type": "question", "settings": { "question": "are your physicians real doctors?", "answer": "<p>PLACEHOLDER: yes. every prescription is written by a licensed physician (MD or DO) who is credentialed and authorized to practice in your state.</p>" } },
+        "q_s6": { "type": "question", "settings": { "question": "is peptide therapy legal?", "answer": "<p>PLACEHOLDER: yes. prescribing compounded medications is a legal and regulated practice in the United States. our physicians are licensed and our pharmacy partner is fully accredited.</p>" } },
+
+        "cat_shipping": { "type": "category", "settings": { "title": "shipping and delivery" } },
+        "q_sh1": { "type": "question", "settings": { "question": "how long does delivery take?", "answer": "<p>PLACEHOLDER: standard delivery takes 3–5 business days from the time your prescription is filled. expedited shipping options are available.</p>" } },
+        "q_sh2": { "type": "question", "settings": { "question": "is the packaging discreet?", "answer": "<p>PLACEHOLDER: yes. all shipments arrive in plain packaging with no external branding that identifies the contents.</p>" } },
+        "q_sh3": { "type": "question", "settings": { "question": "how are temperature-sensitive medications shipped?", "answer": "<p>PLACEHOLDER: temperature-sensitive shipments include insulated packaging and cold packs to maintain proper storage conditions during transit.</p>" } },
+        "q_sh4": { "type": "question", "settings": { "question": "do you ship internationally?", "answer": "<p>PLACEHOLDER: peptly currently ships within the United States only. international shipping is not available at this time.</p>" } }
+      },
+      "block_order": [
+        "cat_about", "q_a1", "q_a2", "q_a3", "q_a4", "q_a5",
+        "cat_therapy", "q_t1", "q_t2", "q_t3", "q_t4", "q_t5", "q_t6", "q_t7", "q_t8",
+        "cat_protocols", "q_p1", "q_p2", "q_p3", "q_p4", "q_p5", "q_p6",
+        "cat_pricing", "q_pr1", "q_pr2", "q_pr3", "q_pr4", "q_pr5",
+        "cat_safety", "q_s1", "q_s2", "q_s3", "q_s4", "q_s5", "q_s6",
+        "cat_shipping", "q_sh1", "q_sh2", "q_sh3", "q_sh4"
+      ]
+    },
+    "cta": {
+      "type": "peptly-cta",
+      "settings": {
+        "heading": "didn't find your answer?",
+        "subheading": "contact us at support@peptly.com or start the questionnaire and your physician can answer protocol-specific questions.",
+        "button_label": "start the questionnaire",
+        "button_link": ""
+      }
+    },
+    "trust_bar": {
+      "type": "peptly-trust-bar",
+      "settings": {
+        "text": "physician-supervised. pharmacy-compounded. delivered to your door."
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "faq",
+    "cta",
+    "trust_bar"
+  ]
+}

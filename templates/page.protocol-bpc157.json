@@ -1,0 +1,122 @@
+{
+  "sections": {
+    "hero": {
+      "type": "peptly-page-hero",
+      "settings": {
+        "label": "protocol",
+        "heading": "bpc-157",
+        "subheading": "a peptide that supports tissue repair, gut healing, and recovery from tendon and ligament injuries. prescribed by a licensed physician, compounded by a verified pharmacy.",
+        "price": "starting at $150/month",
+        "button_label": "start the questionnaire",
+        "button_link": ""
+      }
+    },
+    "what_it_is": {
+      "type": "peptly-richtext",
+      "settings": {
+        "heading": "what it is",
+        "body": "<p>BPC-157 (Body Protection Compound-157) is a synthetic peptide derived from a naturally occurring protein found in human gastric juice. It is a sequence of 15 amino acids that has been studied for its potential role in tissue repair and regeneration.</p><p>Unlike many compounds that target a single pathway, BPC-157 appears to influence multiple healing mechanisms simultaneously. Research has explored its effects on angiogenesis (the formation of new blood vessels), collagen production, and the modulation of growth factor expression.</p><p>At peptly, BPC-157 is prescribed by licensed physicians and compounded by verified pharmacies that adhere to strict quality and sterility standards. Every batch undergoes third-party purity testing.</p>",
+        "alt_bg": false
+      }
+    },
+    "what_used_for": {
+      "type": "peptly-bullet-list",
+      "settings": {
+        "heading": "what it's used for",
+        "intro": "BPC-157 has been studied in the context of the following applications. Your physician will determine if it is appropriate for your specific situation.",
+        "alt_bg": true
+      },
+      "blocks": {
+        "use_1": { "type": "item", "settings": { "text": "tendon and ligament repair following injury or overuse" } },
+        "use_2": { "type": "item", "settings": { "text": "gut lining support and intestinal healing" } },
+        "use_3": { "type": "item", "settings": { "text": "muscle recovery after training or surgery" } },
+        "use_4": { "type": "item", "settings": { "text": "joint health and reduced inflammation" } },
+        "use_5": { "type": "item", "settings": { "text": "soft tissue wound healing" } },
+        "use_6": { "type": "item", "settings": { "text": "nerve repair and neurological protection" } }
+      },
+      "block_order": ["use_1", "use_2", "use_3", "use_4", "use_5", "use_6"]
+    },
+    "how_works": {
+      "type": "peptly-richtext",
+      "settings": {
+        "heading": "how it works",
+        "body": "<p>BPC-157 is believed to work through several interconnected mechanisms. It promotes angiogenesis, which increases blood flow to damaged tissues and accelerates the delivery of nutrients needed for repair. It also appears to upregulate growth hormone receptors, which may enhance the body's natural healing response.</p><p>Additionally, research suggests BPC-157 modulates nitric oxide pathways, which play a role in blood vessel dilation, inflammation regulation, and tissue protection. These combined effects may explain why BPC-157 has shown promise across a range of tissue types and injury conditions.</p>",
+        "alt_bg": false
+      }
+    },
+    "what_to_expect": {
+      "type": "peptly-timeline",
+      "settings": {
+        "heading": "what to expect",
+        "intro": "Individual responses vary. The following is a general timeline based on reported patient experiences. Your physician will provide guidance specific to your protocol.",
+        "alt_bg": true
+      },
+      "blocks": {
+        "t1": { "type": "milestone", "settings": { "period": "week 1–2", "title": "initial response", "text": "PLACEHOLDER: many patients report reduced discomfort in the affected area and improved sleep quality within the first two weeks." } },
+        "t2": { "type": "milestone", "settings": { "period": "week 3–4", "title": "noticeable improvement", "text": "PLACEHOLDER: patients commonly report improved range of motion, reduced inflammation, and faster recovery between workouts." } },
+        "t3": { "type": "milestone", "settings": { "period": "week 5–8", "title": "sustained progress", "text": "PLACEHOLDER: continued healing and repair. many patients report significant improvement in the primary condition being treated." } },
+        "t4": { "type": "milestone", "settings": { "period": "week 8–12", "title": "protocol review", "text": "PLACEHOLDER: your physician reviews your progress and determines whether to continue, adjust, or conclude the protocol." } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4"]
+    },
+    "not_for": {
+      "type": "peptly-richtext",
+      "settings": {
+        "heading": "who it's not for",
+        "body": "<p>BPC-157 may not be appropriate for everyone. Your physician will evaluate your specific health history during the consultation. Generally, BPC-157 is not recommended for individuals who are pregnant or nursing, have active cancer or a history of certain cancers, are taking blood thinners or anticoagulants without physician coordination, or are under 18 years of age.</p><p>This is not a complete list of contraindications. Your physician will make the final determination based on your questionnaire responses and health profile. If BPC-157 is not right for you, your physician may suggest an alternative protocol or recommend that you consult with your primary care provider.</p>",
+        "alt_bg": false
+      }
+    },
+    "pricing": {
+      "type": "peptly-richtext",
+      "settings": {
+        "heading": "pricing",
+        "body": "<p>BPC-157 starts at $150 per month. This includes your initial physician consultation, your compounded prescription, free shipping, and ongoing access to your prescribing physician for dosing adjustments or questions.</p><p>There are no hidden fees, no enrollment costs, and no long-term contracts. You can pause or cancel at any time. If your physician determines that BPC-157 is not appropriate for you, you will not be charged.</p>",
+        "alt_bg": true
+      }
+    },
+    "faq": {
+      "type": "peptly-faq",
+      "settings": {
+        "heading": "frequently asked questions about bpc-157",
+        "alt_bg": false
+      },
+      "blocks": {
+        "q1": { "type": "question", "settings": { "question": "how is bpc-157 administered?", "answer": "<p>PLACEHOLDER: BPC-157 is typically administered via subcutaneous injection. Your physician will provide detailed instructions and your kit will include everything you need.</p>" } },
+        "q2": { "type": "question", "settings": { "question": "are there side effects?", "answer": "<p>PLACEHOLDER: BPC-157 is generally well-tolerated. Some patients report mild irritation at the injection site. Your physician will discuss potential side effects during your consultation.</p>" } },
+        "q3": { "type": "question", "settings": { "question": "how long does a typical protocol last?", "answer": "<p>PLACEHOLDER: most BPC-157 protocols run 8–12 weeks. Your physician will recommend a duration based on your condition and response.</p>" } },
+        "q4": { "type": "question", "settings": { "question": "can I take bpc-157 with other peptides?", "answer": "<p>PLACEHOLDER: some patients use BPC-157 alongside other protocols. Your physician will evaluate whether combination therapy is appropriate for you.</p>" } },
+        "q5": { "type": "question", "settings": { "question": "is bpc-157 fda-approved?", "answer": "<p>PLACEHOLDER: BPC-157 is not FDA-approved as a drug. It is prescribed by licensed physicians as a compounded medication, which is a legal and regulated practice in the United States.</p>" } },
+        "q6": { "type": "question", "settings": { "question": "how is your bpc-157 different from what I can buy online?", "answer": "<p>PLACEHOLDER: our BPC-157 is compounded by a verified pharmacy under strict sterility standards and prescribed by a licensed physician. Products sold online as \"research chemicals\" are unregulated, untested, and potentially unsafe.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"]
+    },
+    "cta": {
+      "type": "peptly-cta",
+      "settings": {
+        "heading": "ready to start bpc-157?",
+        "subheading": "take the questionnaire to see if bpc-157 is right for you. it takes 5 minutes and there's no commitment until your physician approves your protocol.",
+        "button_label": "start the questionnaire",
+        "button_link": ""
+      }
+    },
+    "trust_bar": {
+      "type": "peptly-trust-bar",
+      "settings": {
+        "text": "physician-supervised. pharmacy-compounded. delivered to your door."
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "what_it_is",
+    "what_used_for",
+    "how_works",
+    "what_to_expect",
+    "not_for",
+    "pricing",
+    "faq",
+    "cta",
+    "trust_bar"
+  ]
+}

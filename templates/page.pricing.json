@@ -1,0 +1,126 @@
+{
+  "sections": {
+    "hero": {
+      "type": "peptly-page-hero",
+      "settings": {
+        "label": "",
+        "heading": "transparent pricing. no surprises.",
+        "subheading": "every protocol includes physician consultation, compounded prescription, free shipping, and ongoing physician access. no hidden fees, no contracts.",
+        "price": "",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "pricing_cards": {
+      "type": "peptly-pricing-cards",
+      "settings": {
+        "heading": "",
+        "subheading": ""
+      },
+      "blocks": {
+        "bpc": {
+          "type": "plan",
+          "settings": {
+            "name": "bpc-157",
+            "description": "for tissue repair and recovery.",
+            "price": "$150",
+            "include_1": "physician consultation",
+            "include_2": "compounded prescription",
+            "include_3": "free shipping",
+            "include_4": "ongoing physician access",
+            "include_5": "third-party purity testing",
+            "button_label": "start the questionnaire",
+            "button_link": ""
+          }
+        },
+        "cjc": {
+          "type": "plan",
+          "settings": {
+            "name": "cjc-1295 / ipamorelin",
+            "description": "for sleep, anti-aging, and longevity.",
+            "price": "$200",
+            "include_1": "physician consultation",
+            "include_2": "compounded prescription",
+            "include_3": "free shipping",
+            "include_4": "ongoing physician access",
+            "include_5": "third-party purity testing",
+            "button_label": "start the questionnaire",
+            "button_link": ""
+          }
+        },
+        "tb": {
+          "type": "plan",
+          "settings": {
+            "name": "tb-500",
+            "description": "for muscle repair and flexibility.",
+            "price": "$150",
+            "include_1": "physician consultation",
+            "include_2": "compounded prescription",
+            "include_3": "free shipping",
+            "include_4": "ongoing physician access",
+            "include_5": "third-party purity testing",
+            "button_label": "start the questionnaire",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": ["bpc", "cjc", "tb"]
+    },
+    "comparison": {
+      "type": "peptly-comparison",
+      "settings": {
+        "heading": "how peptly compares",
+        "col_1_name": "gray market",
+        "col_2_name": "concierge clinics",
+        "col_3_name": "peptly"
+      },
+      "blocks": {
+        "r1": { "type": "row", "settings": { "row_label": "physician oversight", "col_1": "none", "col_2": "yes", "col_3": "yes" } },
+        "r2": { "type": "row", "settings": { "row_label": "pharmacy quality", "col_1": "unverified", "col_2": "compounded", "col_3": "compounded, third-party tested" } },
+        "r3": { "type": "row", "settings": { "row_label": "monthly cost", "col_1": "$40–150", "col_2": "$500–1,500", "col_3": "$150–400" } },
+        "r4": { "type": "row", "settings": { "row_label": "onboarding time", "col_1": "immediate (no review)", "col_2": "1–3 weeks", "col_3": "under 1 week" } },
+        "r5": { "type": "row", "settings": { "row_label": "purity testing", "col_1": "none", "col_2": "varies", "col_3": "third-party COA on every batch" } },
+        "r6": { "type": "row", "settings": { "row_label": "contracts", "col_1": "none (no accountability)", "col_2": "often required", "col_3": "none. cancel anytime." } }
+      },
+      "block_order": ["r1", "r2", "r3", "r4", "r5", "r6"]
+    },
+    "faq": {
+      "type": "peptly-faq",
+      "settings": {
+        "heading": "pricing questions",
+        "alt_bg": false
+      },
+      "blocks": {
+        "q1": { "type": "question", "settings": { "question": "does insurance cover peptide therapy?", "answer": "<p>PLACEHOLDER: most insurance plans do not cover compounded peptide therapy. peptly is designed to be affordable without insurance, starting at $150/month with everything included.</p>" } },
+        "q2": { "type": "question", "settings": { "question": "what if my physician determines I'm not a candidate?", "answer": "<p>PLACEHOLDER: if your physician determines that peptide therapy is not appropriate for you, you will not be charged. you only pay once a prescription is written.</p>" } },
+        "q3": { "type": "question", "settings": { "question": "can I cancel at any time?", "answer": "<p>PLACEHOLDER: yes. there are no contracts and no cancellation fees. you can pause or cancel your protocol at any time through your account or by contacting support.</p>" } },
+        "q4": { "type": "question", "settings": { "question": "are there any additional fees?", "answer": "<p>PLACEHOLDER: no. the monthly price includes your physician consultation, compounded prescription, shipping, and ongoing physician access. there are no hidden fees, enrollment costs, or surprise charges.</p>" } },
+        "q5": { "type": "question", "settings": { "question": "do you offer refunds?", "answer": "<p>PLACEHOLDER: because your medication is compounded specifically for you based on a physician's prescription, we are unable to accept returns of opened medication. if you experience issues with your order, contact support and we will work with you to resolve it.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5"]
+    },
+    "cta": {
+      "type": "peptly-cta",
+      "settings": {
+        "heading": "ready to start?",
+        "subheading": "the questionnaire takes 5 minutes. there's no commitment until your physician approves your protocol.",
+        "button_label": "start the questionnaire",
+        "button_link": ""
+      }
+    },
+    "trust_bar": {
+      "type": "peptly-trust-bar",
+      "settings": {
+        "text": "physician-supervised. pharmacy-compounded. delivered to your door."
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "pricing_cards",
+    "comparison",
+    "faq",
+    "cta",
+    "trust_bar"
+  ]
+}

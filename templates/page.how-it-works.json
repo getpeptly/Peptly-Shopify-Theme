@@ -1,0 +1,80 @@
+{
+  "sections": {
+    "hero": {
+      "type": "peptly-page-hero",
+      "settings": {
+        "label": "",
+        "heading": "how peptly works",
+        "subheading": "from your first questionnaire to ongoing care, here is exactly what happens at each step.",
+        "price": "",
+        "button_label": "start the questionnaire",
+        "button_link": ""
+      }
+    },
+    "step_1": {
+      "type": "peptly-richtext",
+      "settings": {
+        "heading": "step 1: the questionnaire",
+        "body": "<p>The process begins with a 5-minute online questionnaire. We ask about your health history, current medications, health goals, and the specific conditions you're looking to address.</p><p>Your responses are encrypted and stored securely. They are only shared with the licensed physician who reviews your case. We do not sell your health data, and we do not use it for advertising.</p><p>The questionnaire is designed to give your physician everything they need to make an informed prescribing decision. If anything is unclear, your physician may follow up with additional questions before making a recommendation.</p>",
+        "alt_bg": false
+      }
+    },
+    "step_2": {
+      "type": "peptly-richtext",
+      "settings": {
+        "heading": "step 2: physician review",
+        "body": "<p>A licensed physician reviews your questionnaire within 24–48 hours. This is a real physician — not a nurse practitioner, not a physician assistant, and not an automated system.</p><p>Your physician evaluates whether peptide therapy is appropriate for your situation, which protocol is the best fit, and what dosing regimen to prescribe. If peptide therapy is not appropriate for you, your physician will explain why and may suggest alternative approaches.</p><p>If you are approved, your physician writes a prescription that is sent directly to our compounding pharmacy partner. You are only charged once your prescription is written.</p>",
+        "alt_bg": true
+      }
+    },
+    "step_3": {
+      "type": "peptly-richtext",
+      "settings": {
+        "heading": "step 3: prescription and compounding",
+        "body": "<p>Your prescription is filled by a verified compounding pharmacy that meets federal and state standards for sterile compounding. Compounding means your medication is prepared specifically for you based on your physician's prescription.</p><p>Every batch of peptides undergoes third-party testing for identity, potency, sterility, and endotoxin levels. Certificates of analysis are available on request.</p><p>Our pharmacy partner is fully licensed, inspected, and compliant with USP 797 and USP 800 standards for sterile and hazardous drug compounding.</p>",
+        "alt_bg": false
+      }
+    },
+    "step_4": {
+      "type": "peptly-richtext",
+      "settings": {
+        "heading": "step 4: delivery",
+        "body": "<p>Your medication is shipped in plain, discreet packaging with no external branding that identifies the contents. Temperature-sensitive shipments include cold chain packaging to maintain potency.</p><p>Standard delivery takes 3–5 business days. Expedited shipping options are available at checkout. Tracking information is provided via email once your order ships.</p><p>Your package includes your medication, injection supplies (if applicable), dosing instructions from your physician, and a quick-start guide.</p>",
+        "alt_bg": true
+      }
+    },
+    "step_5": {
+      "type": "peptly-richtext",
+      "settings": {
+        "heading": "step 5: ongoing care",
+        "body": "<p>Your relationship with peptly does not end at delivery. Your prescribing physician is available for questions about your protocol, dosing adjustments, and side effect management throughout your treatment.</p><p>Refills are handled automatically based on your physician's prescribed schedule. You will receive a reminder before each refill ships, with the option to pause, adjust, or cancel.</p><p>If your needs change, your physician can modify your protocol, switch you to a different peptide, or recommend that you discontinue therapy. There is no penalty for pausing or canceling at any time.</p>",
+        "alt_bg": false
+      }
+    },
+    "cta": {
+      "type": "peptly-cta",
+      "settings": {
+        "heading": "ready to get started?",
+        "subheading": "the questionnaire takes 5 minutes. there's no commitment until your physician approves your protocol.",
+        "button_label": "start the questionnaire",
+        "button_link": ""
+      }
+    },
+    "trust_bar": {
+      "type": "peptly-trust-bar",
+      "settings": {
+        "text": "physician-supervised. pharmacy-compounded. delivered to your door."
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "step_1",
+    "step_2",
+    "step_3",
+    "step_4",
+    "step_5",
+    "cta",
+    "trust_bar"
+  ]
+}
