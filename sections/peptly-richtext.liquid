@@ -1,0 +1,79 @@
+{{ 'peptly-custom.css' | asset_url | stylesheet_tag }}
+
+<section
+  class="peptly-section peptly-richtext{% if section.settings.alt_bg %} peptly-richtext--alt{% endif %}"
+  aria-label="{{ section.settings.heading }}"
+>
+  <div class="peptly-container">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="peptly-richtext__heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    <div class="peptly-richtext__body">
+      {{ section.settings.body }}
+    </div>
+  </div>
+</section>
+
+<style>
+  .peptly-richtext {
+    background-color: var(--peptly-bone);
+    padding: 64px 0;
+  }
+  @media (min-width: 750px) {
+    .peptly-richtext {
+      padding: 80px 0;
+    }
+  }
+  .peptly-richtext--alt {
+    background-color: var(--peptly-bone-dark);
+  }
+  .peptly-richtext__heading {
+    font-size: clamp(1.375rem, 3vw, 1.75rem);
+    margin-bottom: 24px;
+    max-width: 560px;
+  }
+  .peptly-richtext__body {
+    max-width: 640px;
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: var(--peptly-ink);
+  }
+  .peptly-richtext__body p {
+    margin-bottom: 16px;
+    max-width: 640px;
+  }
+  .peptly-richtext__body p:last-child {
+    margin-bottom: 0;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "peptly rich text",
+  "tag": "div",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Body text",
+      "default": "<p>PLACEHOLDER: add content here.</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "alt_bg",
+      "label": "Use alternate background",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "peptly rich text"
+    }
+  ]
+}
+{% endschema %}

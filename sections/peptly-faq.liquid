@@ -1,0 +1,165 @@
+{{ 'peptly-custom.css' | asset_url | stylesheet_tag }}
+
+<section
+  class="peptly-section peptly-faq{% if section.settings.alt_bg %} peptly-faq--alt{% endif %}"
+  aria-label="{{ section.settings.heading }}"
+>
+  <div class="peptly-container">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="peptly-faq__heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+
+    <div class="peptly-faq__list">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'category' -%}
+          <h3 class="peptly-faq__category" {{ block.shopify_attributes }}>{{ block.settings.title }}</h3>
+        {%- elsif block.type == 'question' -%}
+          <details class="peptly-faq__item" {{ block.shopify_attributes }}>
+            <summary class="peptly-faq__question">
+              <span>{{ block.settings.question }}</span>
+              <svg class="peptly-faq__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+            </summary>
+            <div class="peptly-faq__answer">
+              {{ block.settings.answer }}
+            </div>
+          </details>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+<style>
+  .peptly-faq {
+    background-color: var(--peptly-bone);
+    padding: 64px 0;
+  }
+  @media (min-width: 750px) {
+    .peptly-faq {
+      padding: 80px 0;
+    }
+  }
+  .peptly-faq--alt {
+    background-color: var(--peptly-bone-dark);
+  }
+  .peptly-faq__heading {
+    font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+    margin-bottom: 48px;
+    max-width: 560px;
+  }
+  .peptly-faq__list {
+    max-width: 720px;
+  }
+  .peptly-faq__category {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--peptly-forest);
+    margin: 40px 0 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--peptly-mist);
+  }
+  .peptly-faq__category:first-child {
+    margin-top: 0;
+  }
+  .peptly-faq__item {
+    border-bottom: 1px solid var(--peptly-mist);
+  }
+  .peptly-faq__question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px 0;
+    cursor: pointer;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--peptly-ink);
+    list-style: none;
+  }
+  .peptly-faq__question::-webkit-details-marker {
+    display: none;
+  }
+  .peptly-faq__question::marker {
+    display: none;
+    content: '';
+  }
+  .peptly-faq__icon {
+    flex-shrink: 0;
+    color: var(--peptly-mist);
+    transition: transform 0.2s ease;
+  }
+  details[open] .peptly-faq__icon {
+    transform: rotate(45deg);
+  }
+  .peptly-faq__answer {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: var(--peptly-ink);
+    opacity: 0.8;
+    padding-bottom: 24px;
+    max-width: 600px;
+  }
+  .peptly-faq__answer p {
+    margin-bottom: 12px;
+  }
+  .peptly-faq__answer p:last-child {
+    margin-bottom: 0;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "peptly FAQ",
+  "tag": "div",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section heading"
+    },
+    {
+      "type": "checkbox",
+      "id": "alt_bg",
+      "label": "Use alternate background",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Category heading",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Category title",
+          "default": "general"
+        }
+      ]
+    },
+    {
+      "type": "question",
+      "name": "Question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "PLACEHOLDER: question text?"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer",
+          "default": "<p>PLACEHOLDER: answer text.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "peptly FAQ"
+    }
+  ]
+}
+{% endschema %}
