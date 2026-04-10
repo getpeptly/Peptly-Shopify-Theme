@@ -1,0 +1,671 @@
+/* peptly custom styles — brand identity layer */
+
+:root {
+  --peptly-forest: #1F3A2E;
+  --peptly-forest-dark: #172E24;
+  --peptly-bone: #F5F1EA;
+  --peptly-bone-dark: #EDEAE3;
+  --peptly-ink: #1A1A1A;
+  --peptly-copper: #B8743E;
+  --peptly-copper-dark: #A5683A;
+  --peptly-mist: #D4D9D2;
+}
+
+/* ---- base resets for peptly sections ---- */
+.peptly-section {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--peptly-ink);
+  box-sizing: border-box;
+}
+
+.peptly-section *,
+.peptly-section *::before,
+.peptly-section *::after {
+  box-sizing: inherit;
+}
+
+.peptly-section h1,
+.peptly-section h2,
+.peptly-section h3,
+.peptly-section h4 {
+  font-weight: 500;
+  color: var(--peptly-forest);
+  line-height: 1.25;
+  margin: 0;
+}
+
+.peptly-section p {
+  font-weight: 400;
+  line-height: 1.65;
+  margin: 0;
+  max-width: 60ch;
+}
+
+/* ---- layout ---- */
+.peptly-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (min-width: 750px) {
+  .peptly-container {
+    padding: 0 40px;
+  }
+}
+
+/* ---- buttons ---- */
+.peptly-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  min-height: 48px;
+  padding: 14px 32px;
+  border-radius: 8px;
+}
+
+.peptly-btn--primary {
+  background-color: var(--peptly-forest);
+  color: var(--peptly-bone);
+}
+
+.peptly-btn--primary:hover {
+  background-color: var(--peptly-forest-dark);
+}
+
+.peptly-btn--secondary {
+  background-color: transparent;
+  color: var(--peptly-forest);
+  border: 1px solid var(--peptly-forest);
+}
+
+.peptly-btn--secondary:hover {
+  background-color: rgba(31, 58, 46, 0.06);
+}
+
+.peptly-btn--bone {
+  background-color: var(--peptly-bone);
+  color: var(--peptly-forest);
+}
+
+.peptly-btn--bone:hover {
+  background-color: var(--peptly-bone-dark);
+}
+
+.peptly-btn--large {
+  font-size: 1rem;
+  min-height: 52px;
+  padding: 16px 40px;
+}
+
+.peptly-link {
+  color: var(--peptly-forest);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  border-bottom: 1px solid var(--peptly-mist);
+  padding-bottom: 2px;
+  transition: border-color 0.2s ease;
+}
+
+.peptly-link:hover {
+  border-color: var(--peptly-forest);
+}
+
+.peptly-link--bone {
+  color: var(--peptly-bone);
+  border-bottom-color: rgba(245, 241, 234, 0.3);
+}
+
+.peptly-link--bone:hover {
+  border-bottom-color: var(--peptly-bone);
+}
+
+/* ---- hero section ---- */
+.peptly-hero {
+  background-color: var(--peptly-forest);
+  color: var(--peptly-bone);
+  position: relative;
+  overflow: hidden;
+  min-height: 85vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+.peptly-hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.peptly-hero__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.peptly-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(31, 58, 46, 0.85) 0%, rgba(31, 58, 46, 0.3) 100%);
+  z-index: 1;
+}
+
+.peptly-hero__content {
+  position: relative;
+  z-index: 2;
+  padding: 80px 24px 60px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 750px) {
+  .peptly-hero__content {
+    padding: 120px 40px 80px;
+  }
+}
+
+.peptly-hero h1 {
+  color: var(--peptly-bone);
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 500;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.peptly-hero__sub {
+  color: var(--peptly-bone);
+  font-size: clamp(0.9375rem, 2vw, 1.0625rem);
+  line-height: 1.65;
+  max-width: 540px;
+  margin-bottom: 36px;
+  opacity: 0.9;
+}
+
+.peptly-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ---- problem section (3 columns) ---- */
+.peptly-problem {
+  background-color: var(--peptly-bone);
+  padding: 80px 0;
+}
+
+@media (min-width: 750px) {
+  .peptly-problem {
+    padding: 120px 0;
+  }
+}
+
+.peptly-problem__heading {
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  margin-bottom: 48px;
+  max-width: 540px;
+}
+
+@media (min-width: 750px) {
+  .peptly-problem__heading {
+    margin-bottom: 64px;
+  }
+}
+
+.peptly-problem__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (min-width: 750px) {
+  .peptly-problem__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}
+
+.peptly-problem__col {
+  padding: 32px;
+  border-radius: 12px;
+  border: 1px solid var(--peptly-mist);
+}
+
+.peptly-problem__col--highlight {
+  border-color: var(--peptly-forest);
+  background-color: rgba(31, 58, 46, 0.03);
+}
+
+.peptly-problem__label {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--peptly-mist);
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  text-transform: lowercase;
+}
+
+.peptly-problem__col--highlight .peptly-problem__label {
+  color: var(--peptly-copper);
+}
+
+.peptly-problem__col-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--peptly-forest);
+  margin-bottom: 12px;
+}
+
+.peptly-problem__col-text {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--peptly-ink);
+  opacity: 0.8;
+}
+
+.peptly-problem__col--highlight .peptly-problem__col-text {
+  opacity: 1;
+}
+
+.peptly-problem__verdict {
+  display: inline-block;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  margin-top: 16px;
+  padding: 6px 14px;
+  border-radius: 100px;
+  background-color: rgba(31, 58, 46, 0.06);
+  color: var(--peptly-forest);
+}
+
+.peptly-problem__verdict--bad {
+  color: var(--peptly-ink);
+  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* ---- protocols section ---- */
+.peptly-protocols {
+  background-color: var(--peptly-bone-dark);
+  padding: 80px 0;
+}
+
+@media (min-width: 750px) {
+  .peptly-protocols {
+    padding: 120px 0;
+  }
+}
+
+.peptly-protocols__heading {
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  margin-bottom: 48px;
+}
+
+@media (min-width: 750px) {
+  .peptly-protocols__heading {
+    margin-bottom: 64px;
+  }
+}
+
+.peptly-protocols__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 750px) {
+  .peptly-protocols__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+.peptly-protocol-card {
+  background-color: var(--peptly-bone);
+  border-radius: 12px;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.peptly-protocol-card:hover {
+  border-color: var(--peptly-mist);
+}
+
+.peptly-protocol-card__name {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--peptly-forest);
+  margin-bottom: 8px;
+}
+
+.peptly-protocol-card__desc {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--peptly-ink);
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.peptly-protocol-card__price {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--peptly-forest);
+  opacity: 0.7;
+  margin-bottom: 24px;
+}
+
+.peptly-protocol-card__link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--peptly-forest);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.peptly-protocol-card__link svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s ease;
+}
+
+.peptly-protocol-card:hover .peptly-protocol-card__link svg {
+  transform: translateX(3px);
+}
+
+/* ---- how it works (4 steps) ---- */
+.peptly-steps {
+  background-color: var(--peptly-bone);
+  padding: 80px 0;
+}
+
+@media (min-width: 750px) {
+  .peptly-steps {
+    padding: 120px 0;
+  }
+}
+
+.peptly-steps__heading {
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  margin-bottom: 48px;
+  max-width: 480px;
+}
+
+@media (min-width: 750px) {
+  .peptly-steps__heading {
+    margin-bottom: 64px;
+  }
+}
+
+.peptly-steps__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (min-width: 750px) {
+  .peptly-steps__grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+}
+
+.peptly-step {
+  position: relative;
+}
+
+.peptly-step__number {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--peptly-copper);
+  margin-bottom: 14px;
+}
+
+.peptly-step__title {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  color: var(--peptly-forest);
+  margin-bottom: 8px;
+}
+
+.peptly-step__text {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--peptly-ink);
+  opacity: 0.7;
+}
+
+/* ---- trust signals ---- */
+.peptly-trust {
+  background-color: var(--peptly-bone-dark);
+  padding: 80px 0;
+}
+
+@media (min-width: 750px) {
+  .peptly-trust {
+    padding: 120px 0;
+  }
+}
+
+.peptly-trust__heading {
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  margin-bottom: 48px;
+  max-width: 540px;
+}
+
+@media (min-width: 750px) {
+  .peptly-trust__heading {
+    margin-bottom: 64px;
+  }
+}
+
+.peptly-trust__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (min-width: 750px) {
+  .peptly-trust__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}
+
+.peptly-trust__item-title {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  color: var(--peptly-forest);
+  margin-bottom: 8px;
+}
+
+.peptly-trust__item-text {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--peptly-ink);
+  opacity: 0.7;
+  margin-bottom: 12px;
+}
+
+.peptly-trust__item-link {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--peptly-copper);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.peptly-trust__item-link:hover {
+  border-bottom-color: var(--peptly-copper);
+}
+
+/* ---- final CTA ---- */
+.peptly-cta {
+  background-color: var(--peptly-forest);
+  color: var(--peptly-bone);
+  padding: 80px 0;
+  text-align: center;
+}
+
+@media (min-width: 750px) {
+  .peptly-cta {
+    padding: 120px 0;
+  }
+}
+
+.peptly-cta h2 {
+  color: var(--peptly-bone);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  margin-bottom: 16px;
+}
+
+.peptly-cta__sub {
+  color: var(--peptly-bone);
+  font-size: 1rem;
+  line-height: 1.65;
+  max-width: 520px;
+  margin: 0 auto 36px;
+  opacity: 0.85;
+}
+
+/* ---- trust bar (above footer on every page) ---- */
+.peptly-trust-bar {
+  background-color: var(--peptly-bone-dark);
+  border-top: 1px solid var(--peptly-mist);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.peptly-trust-bar__text {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--peptly-forest);
+  letter-spacing: 0.01em;
+  opacity: 0.7;
+}
+
+/* ---- footer ---- */
+.peptly-footer {
+  background-color: var(--peptly-forest);
+  color: var(--peptly-bone);
+  padding: 80px 0 40px;
+}
+
+.peptly-footer__top {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  margin-bottom: 64px;
+}
+
+@media (min-width: 750px) {
+  .peptly-footer__top {
+    grid-template-columns: 1.5fr repeat(4, 1fr);
+    gap: 40px;
+  }
+}
+
+.peptly-footer__brand img,
+.peptly-footer__brand svg {
+  height: 24px;
+  width: auto;
+  margin-bottom: 16px;
+}
+
+.peptly-footer__brand-text {
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  opacity: 0.6;
+  max-width: 280px;
+}
+
+.peptly-footer__col-title {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--peptly-bone);
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.peptly-footer__col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.peptly-footer__col li {
+  margin-bottom: 10px;
+}
+
+.peptly-footer__col a {
+  font-size: 0.875rem;
+  color: var(--peptly-bone);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.peptly-footer__col a:hover {
+  opacity: 1;
+}
+
+.peptly-footer__bottom {
+  border-top: 1px solid rgba(245, 241, 234, 0.1);
+  padding-top: 32px;
+}
+
+.peptly-footer__legal {
+  font-size: 0.75rem;
+  line-height: 1.7;
+  opacity: 0.4;
+  max-width: 700px;
+}
+
+/* ---- sticky header CTA ---- */
+.peptly-header-cta {
+  display: none;
+}
+
+@media (min-width: 750px) {
+  .peptly-header-cta {
+    display: inline-flex;
+  }
+
+  .peptly-header-cta .peptly-btn {
+    min-height: 36px;
+    padding: 8px 20px;
+    font-size: 0.8125rem;
+  }
+}
+
+/* ---- utility ---- */
+.peptly-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

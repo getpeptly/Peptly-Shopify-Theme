@@ -1,0 +1,114 @@
+{{ 'peptly-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="peptly-section peptly-problem" aria-label="{{ section.settings.heading }}">
+  <div class="peptly-container">
+    <h2 class="peptly-problem__heading">{{ section.settings.heading }}</h2>
+
+    <div class="peptly-problem__grid">
+      {%- for block in section.blocks -%}
+        <div
+          class="peptly-problem__col{% if block.settings.highlight %} peptly-problem__col--highlight{% endif %}"
+          {{ block.shopify_attributes }}
+        >
+          <div class="peptly-problem__label">{{ block.settings.label }}</div>
+          <h3 class="peptly-problem__col-title">{{ block.settings.title }}</h3>
+          <p class="peptly-problem__col-text">{{ block.settings.text }}</p>
+          <span class="peptly-problem__verdict{% unless block.settings.highlight %} peptly-problem__verdict--bad{% endunless %}">
+            {{ block.settings.verdict }}
+          </span>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "peptly problem",
+  "tag": "div",
+  "class": "peptly-problem-wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section heading",
+      "default": "peptide therapy has been gatekept for too long"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Column",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Column label",
+          "default": "gray market vendors"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Column title",
+          "default": "$40–150/month"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Column description",
+          "default": "research chemicals from anonymous overseas sites, no physician oversight, no pharmacy quality control, no accountability."
+        },
+        {
+          "type": "text",
+          "id": "verdict",
+          "label": "Verdict label",
+          "default": "unsafe"
+        },
+        {
+          "type": "checkbox",
+          "id": "highlight",
+          "label": "Highlight this column",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "peptly problem",
+      "blocks": [
+        {
+          "type": "column",
+          "settings": {
+            "label": "gray market vendors",
+            "title": "$40–150/month",
+            "text": "research chemicals from anonymous overseas sites, no physician oversight, no pharmacy quality control, no accountability.",
+            "verdict": "unsafe",
+            "highlight": false
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "label": "concierge clinics",
+            "title": "$500–1,500/month",
+            "text": "the same compounds plus consultations, lab panels, and overhead that prices you out.",
+            "verdict": "inaccessible",
+            "highlight": false
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "label": "peptly",
+            "title": "$150–400/month",
+            "text": "physician-supervised, pharmacy-compounded, transparent pricing. the same quality at a fair price.",
+            "verdict": "legitimate and accessible",
+            "highlight": true
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

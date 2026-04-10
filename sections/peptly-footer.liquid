@@ -1,0 +1,109 @@
+{{ 'peptly-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="peptly-section peptly-footer" aria-label="Site footer">
+  <div class="peptly-container">
+    <div class="peptly-footer__top">
+      <div class="peptly-footer__brand">
+        <img
+          src="{{ 'peptly_wordmark_bone.svg' | asset_url }}"
+          alt="peptly"
+          width="120"
+          height="28"
+          loading="lazy"
+        >
+        <p class="peptly-footer__brand-text">{{ section.settings.brand_text }}</p>
+      </div>
+
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'menu_column' -%}
+          <nav class="peptly-footer__col" aria-label="{{ block.settings.title }}" {{ block.shopify_attributes }}>
+            <div class="peptly-footer__col-title">{{ block.settings.title }}</div>
+            {%- if block.settings.menu != blank -%}
+              <ul>
+                {%- for link in linklists[block.settings.menu].links -%}
+                  <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
+          </nav>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <div class="peptly-footer__bottom">
+      <p class="peptly-footer__legal">{{ section.settings.legal_text }}</p>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "peptly footer",
+  "tag": "div",
+  "class": "peptly-footer-wrapper",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "brand_text",
+      "label": "Brand description",
+      "default": "physician-supervised peptide therapy, delivered to your door."
+    },
+    {
+      "type": "textarea",
+      "id": "legal_text",
+      "label": "Legal text",
+      "default": "© 2026 peptly. peptide therapy is provided through licensed independent physicians and compounded by verified pharmacies. peptly is a telehealth platform, not a pharmacy or medical practice."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "menu_column",
+      "name": "Menu column",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Column title",
+          "default": "protocols"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "peptly footer",
+      "blocks": [
+        {
+          "type": "menu_column",
+          "settings": {
+            "title": "protocols"
+          }
+        },
+        {
+          "type": "menu_column",
+          "settings": {
+            "title": "company"
+          }
+        },
+        {
+          "type": "menu_column",
+          "settings": {
+            "title": "support"
+          }
+        },
+        {
+          "type": "menu_column",
+          "settings": {
+            "title": "legal"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

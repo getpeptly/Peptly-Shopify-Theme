@@ -1,0 +1,51 @@
+{{ 'peptly-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="peptly-section peptly-cta" aria-label="{{ section.settings.heading }}">
+  <div class="peptly-container">
+    <h2>{{ section.settings.heading }}</h2>
+    <p class="peptly-cta__sub">{{ section.settings.subheading }}</p>
+    {%- if section.settings.button_label != blank -%}
+      <a href="{{ section.settings.button_link }}" class="peptly-btn peptly-btn--bone peptly-btn--large">
+        {{ section.settings.button_label }}
+      </a>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "peptly CTA",
+  "tag": "div",
+  "class": "peptly-cta-wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "ready to start?"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "the questionnaire takes 5 minutes. there's no commitment until your physician approves your protocol."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "start the questionnaire"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "peptly CTA"
+    }
+  ]
+}
+{% endschema %}

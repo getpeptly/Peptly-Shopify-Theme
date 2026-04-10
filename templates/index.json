@@ -1,290 +1,192 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */{
+{
   "sections": {
-    "hero_jVaWmY": {
-      "type": "hero",
-      "blocks": {
-        "text_YLPk4p": {
-          "type": "text",
-          "name": "t:names.heading",
-          "settings": {
-            "text": "<p>Browse our latest products</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground-heading)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "button_H9gpTf": {
-          "type": "button",
-          "name": "t:names.button",
-          "settings": {
-            "label": "Shop all",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "button-secondary",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_YLPk4p",
-        "button_H9gpTf"
-      ],
-      "name": "t:names.hero",
+    "peptly_hero": {
+      "type": "peptly-hero",
       "settings": {
-        "media_type_1": "image",
-        "media_type_2": "image",
-        "stack_media_on_mobile": false,
-        "custom_mobile_media": false,
-        "media_type_1_mobile": "image",
-        "media_type_2_mobile": "image",
-        "open_in_new_tab": false,
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "space-between",
-        "vertical_alignment": "flex-end",
-        "align_baseline": true,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "flex-end",
-        "gap": 24,
-        "section_width": "page-width",
-        "section_height": "medium",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-6",
-        "toggle_overlay": true,
-        "overlay_color": "#12121266",
-        "overlay_style": "solid",
-        "gradient_direction": "to bottom",
-        "blurred_reflection": false,
-        "reflection_opacity": 75,
-        "padding-block-start": 100,
-        "padding-block-end": 72
+        "heading": "recovery, prescribed.",
+        "subheading": "peptide therapy supervised by licensed physicians, compounded by verified pharmacies, delivered to your door. starting at $150/month.",
+        "button_label": "see if peptly is right for you",
+        "button_link": "",
+        "secondary_label": "how it works",
+        "secondary_link": "",
+        "image_alt": "PLACEHOLDER: editorial lifestyle photography"
       }
     },
-    "product_list_fa6P9H": {
-      "type": "product-list",
+    "peptly_problem": {
+      "type": "peptly-problem",
+      "settings": {
+        "heading": "peptide therapy has been gatekept for too long"
+      },
       "blocks": {
-        "static-header": {
-          "type": "_product-list-content",
-          "name": "t:names.header",
-          "static": true,
+        "col_gray": {
+          "type": "column",
           "settings": {
-            "content_direction": "row",
-            "vertical_on_mobile": false,
-            "horizontal_alignment": "space-between",
-            "vertical_alignment": "flex-end",
-            "align_baseline": true,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "product_list_text_YFtzcL": {
-              "type": "_product-list-text",
-              "name": "t:names.collection_title",
-              "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h4",
-                "font": "var(--font-body--family)",
-                "font_size": "",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "product_list_button_MWeP9V": {
-              "type": "_product-list-button",
-              "name": "t:names.product_list_button",
-              "settings": {
-                "label": "View all",
-                "open_in_new_tab": false,
-                "style_class": "link",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "product_list_text_YFtzcL",
-            "product_list_button_MWeP9V"
-          ]
+            "label": "gray market vendors",
+            "title": "$40–150/month",
+            "text": "research chemicals from anonymous overseas sites, no physician oversight, no pharmacy quality control, no accountability.",
+            "verdict": "unsafe",
+            "highlight": false
+          }
         },
-        "static-product-card": {
-          "type": "_product-card",
-          "name": "t:names.product_card",
-          "static": true,
+        "col_concierge": {
+          "type": "column",
           "settings": {
-            "product_card_gap": 4,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "product_card_gallery_677WP3": {
-              "type": "_product-card-gallery",
-              "name": "t:names.product_card_media",
-              "settings": {
-                "image_ratio": "adapt",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "product_title_YXxMTj": {
-              "type": "product-title",
-              "name": "t:names.product_title",
-              "settings": {
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 4,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "price_JQzVV4": {
-              "type": "price",
-              "name": "t:names.product_price",
-              "settings": {
-                "show_sale_price_first": true,
-                "show_installments": false,
-                "show_tax_info": false,
-                "type_preset": "h6",
-                "width": "100%",
-                "alignment": "left",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "color": "var(--color-foreground)",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "product_card_gallery_677WP3",
-            "product_title_YXxMTj",
-            "price_JQzVV4"
-          ]
+            "label": "concierge clinics",
+            "title": "$500–1,500/month",
+            "text": "the same compounds plus consultations, lab panels, and overhead that prices you out.",
+            "verdict": "inaccessible",
+            "highlight": false
+          }
+        },
+        "col_peptly": {
+          "type": "column",
+          "settings": {
+            "label": "peptly",
+            "title": "$150–400/month",
+            "text": "physician-supervised, pharmacy-compounded, transparent pricing. the same quality at a fair price.",
+            "verdict": "legitimate and accessible",
+            "highlight": true
+          }
         }
       },
-      "name": "Featured collection",
+      "block_order": ["col_gray", "col_concierge", "col_peptly"]
+    },
+    "peptly_protocols": {
+      "type": "peptly-protocols",
       "settings": {
-        "collection": "all",
-        "layout_type": "grid",
-        "carousel_on_mobile": false,
-        "max_products": 8,
-        "columns": 4,
-        "mobile_columns": "2",
-        "mobile_card_size": "60cqw",
-        "columns_gap": 8,
-        "rows_gap": 24,
-        "icons_style": "arrow",
-        "icons_shape": "none",
-        "section_width": "page-width",
-        "horizontal_alignment": "flex-start",
-        "gap": 28,
-        "color_scheme": "scheme-1",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "heading": "three protocols. one platform."
+      },
+      "blocks": {
+        "proto_bpc": {
+          "type": "protocol",
+          "settings": {
+            "name": "bpc-157",
+            "description": "for tissue repair and recovery.",
+            "price": "starting at $150/month",
+            "link": ""
+          }
+        },
+        "proto_cjc": {
+          "type": "protocol",
+          "settings": {
+            "name": "cjc-1295 / ipamorelin",
+            "description": "for sleep, anti-aging, and longevity.",
+            "price": "starting at $200/month",
+            "link": ""
+          }
+        },
+        "proto_tb": {
+          "type": "protocol",
+          "settings": {
+            "name": "tb-500",
+            "description": "for muscle repair and flexibility.",
+            "price": "starting at $150/month",
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["proto_bpc", "proto_cjc", "proto_tb"]
+    },
+    "peptly_steps": {
+      "type": "peptly-steps",
+      "settings": {
+        "heading": "from questionnaire to delivery in under a week"
+      },
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "title": "take the questionnaire",
+            "text": "5 minutes, online. we ask about your health history, goals, and current medications."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "title": "licensed physician reviews your case",
+            "text": "a real physician reviews your questionnaire and determines if peptide therapy is appropriate for you."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "title": "compounded pharmacy fills your prescription",
+            "text": "your prescription is filled by a verified compounding pharmacy with third-party purity testing."
+          }
+        },
+        "step_4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "title": "discreet delivery to your door",
+            "text": "shipped in plain, temperature-controlled packaging. no branding on the outside."
+          }
+        }
+      },
+      "block_order": ["step_1", "step_2", "step_3", "step_4"]
+    },
+    "peptly_trust": {
+      "type": "peptly-trust",
+      "settings": {
+        "heading": "the things we believe matter, we publish"
+      },
+      "blocks": {
+        "trust_physicians": {
+          "type": "trust_item",
+          "settings": {
+            "title": "real physicians, named and credentialed",
+            "text": "every prescription is written by a licensed physician. not a nurse practitioner, not an algorithm.",
+            "link_label": "meet our medical director",
+            "link_url": ""
+          }
+        },
+        "trust_pharmacy": {
+          "type": "trust_item",
+          "settings": {
+            "title": "verified compounding pharmacy partner",
+            "text": "your peptides are compounded by a pharmacy that meets federal and state standards for sterile compounding.",
+            "link_label": "see our pharmacy",
+            "link_url": ""
+          }
+        },
+        "trust_purity": {
+          "type": "trust_item",
+          "settings": {
+            "title": "third-party purity certificates",
+            "text": "every batch is tested for identity, potency, and sterility. certificates of analysis are available on request.",
+            "link_label": "request a certificate",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": ["trust_physicians", "trust_pharmacy", "trust_purity"]
+    },
+    "peptly_cta": {
+      "type": "peptly-cta",
+      "settings": {
+        "heading": "ready to start?",
+        "subheading": "the questionnaire takes 5 minutes. there's no commitment until your physician approves your protocol.",
+        "button_label": "start the questionnaire",
+        "button_link": ""
+      }
+    },
+    "peptly_trust_bar": {
+      "type": "peptly-trust-bar",
+      "settings": {
+        "text": "physician-supervised. pharmacy-compounded. delivered to your door."
       }
     }
   },
   "order": [
-    "hero_jVaWmY",
-    "product_list_fa6P9H"
+    "peptly_hero",
+    "peptly_problem",
+    "peptly_protocols",
+    "peptly_steps",
+    "peptly_trust",
+    "peptly_cta",
+    "peptly_trust_bar"
   ]
 }

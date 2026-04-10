@@ -1,0 +1,99 @@
+{{ 'peptly-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="peptly-section peptly-trust" aria-label="{{ section.settings.heading }}">
+  <div class="peptly-container">
+    <h2 class="peptly-trust__heading">{{ section.settings.heading }}</h2>
+
+    <div class="peptly-trust__grid">
+      {%- for block in section.blocks -%}
+        <div class="peptly-trust__item" {{ block.shopify_attributes }}>
+          <h3 class="peptly-trust__item-title">{{ block.settings.title }}</h3>
+          <p class="peptly-trust__item-text">{{ block.settings.text }}</p>
+          {%- if block.settings.link_label != blank -%}
+            <a href="{{ block.settings.link_url }}" class="peptly-trust__item-link">
+              {{ block.settings.link_label }}
+            </a>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "peptly trust",
+  "tag": "div",
+  "class": "peptly-trust-wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section heading",
+      "default": "the things we believe matter, we publish"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "trust_item",
+      "name": "Trust item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "real physicians, named and credentialed"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Description",
+          "default": "every prescription is written by a licensed physician. not a nurse practitioner, not an algorithm."
+        },
+        {
+          "type": "text",
+          "id": "link_label",
+          "label": "Link label",
+          "default": "meet our medical director"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "peptly trust",
+      "blocks": [
+        {
+          "type": "trust_item",
+          "settings": {
+            "title": "real physicians, named and credentialed",
+            "text": "every prescription is written by a licensed physician. not a nurse practitioner, not an algorithm.",
+            "link_label": "meet our medical director"
+          }
+        },
+        {
+          "type": "trust_item",
+          "settings": {
+            "title": "verified compounding pharmacy partner",
+            "text": "your peptides are compounded by a pharmacy that meets federal and state standards for sterile compounding.",
+            "link_label": "see our pharmacy"
+          }
+        },
+        {
+          "type": "trust_item",
+          "settings": {
+            "title": "third-party purity certificates",
+            "text": "every batch is tested for identity, potency, and sterility. certificates of analysis are available on request.",
+            "link_label": "request a certificate"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
