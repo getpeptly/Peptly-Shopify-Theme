@@ -17,7 +17,7 @@
         "col_protocols": {
           "type": "menu_column",
           "settings": {
-            "title": "",
+            "title": "protocols",
             "menu": "protocols"
           }
         },
@@ -25,21 +25,21 @@
           "type": "menu_column",
           "settings": {
             "title": "company",
-            "menu": ""
+            "menu": "company"
           }
         },
         "col_support": {
           "type": "menu_column",
           "settings": {
             "title": "support",
-            "menu": ""
+            "menu": "support"
           }
         },
         "col_legal": {
           "type": "menu_column",
           "settings": {
             "title": "legal",
-            "menu": ""
+            "menu": "legal"
           }
         }
       },
