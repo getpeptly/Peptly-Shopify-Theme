@@ -1,40 +1,58 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "footer",
   "name": "Footer",
   "sections": {
     "peptly_footer": {
       "type": "peptly-footer",
-      "settings": {
-        "brand_text": "physician-supervised peptide therapy, delivered to your door.",
-        "legal_text": "© 2026 peptly. peptide therapy is provided through licensed independent physicians and compounded by verified pharmacies. peptly is a telehealth platform, not a pharmacy or medical practice."
-      },
       "blocks": {
         "col_protocols": {
           "type": "menu_column",
           "settings": {
-            "title": "protocols"
+            "title": "protocols",
+            "menu": ""
           }
         },
         "col_company": {
           "type": "menu_column",
           "settings": {
-            "title": "company"
+            "title": "company",
+            "menu": ""
           }
         },
         "col_support": {
           "type": "menu_column",
           "settings": {
-            "title": "support"
+            "title": "support",
+            "menu": ""
           }
         },
         "col_legal": {
           "type": "menu_column",
           "settings": {
-            "title": "legal"
+            "title": "legal",
+            "menu": ""
           }
         }
       },
-      "block_order": ["col_protocols", "col_company", "col_support", "col_legal"]
+      "block_order": [
+        "col_protocols",
+        "col_company",
+        "col_support",
+        "col_legal"
+      ],
+      "settings": {
+        "brand_text": "physician-supervised peptide therapy, delivered to your door.",
+        "legal_text": "© 2026 peptly. peptide therapy is provided through licensed independent physicians and compounded by verified pharmacies. peptly is a telehealth platform, not a pharmacy or medical practice."
+      }
     }
   },
   "order": [

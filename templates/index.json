@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "peptly_hero": {
@@ -5,18 +14,15 @@
       "settings": {
         "heading": "recovery, prescribed.",
         "subheading": "peptide therapy supervised by licensed physicians, compounded by verified pharmacies, delivered to your door. starting at $150/month.",
+        "image_alt": "PLACEHOLDER: editorial lifestyle photography",
         "button_label": "see if peptly is right for you",
         "button_link": "",
         "secondary_label": "how it works",
-        "secondary_link": "",
-        "image_alt": "PLACEHOLDER: editorial lifestyle photography"
+        "secondary_link": ""
       }
     },
     "peptly_problem": {
       "type": "peptly-problem",
-      "settings": {
-        "heading": "peptide therapy has been gatekept for too long"
-      },
       "blocks": {
         "col_gray": {
           "type": "column",
@@ -49,13 +55,17 @@
           }
         }
       },
-      "block_order": ["col_gray", "col_concierge", "col_peptly"]
+      "block_order": [
+        "col_gray",
+        "col_concierge",
+        "col_peptly"
+      ],
+      "settings": {
+        "heading": "peptide therapy has been gatekept for too long"
+      }
     },
     "peptly_protocols": {
       "type": "peptly-protocols",
-      "settings": {
-        "heading": "three protocols. one platform."
-      },
       "blocks": {
         "proto_bpc": {
           "type": "protocol",
@@ -63,7 +73,7 @@
             "name": "bpc-157",
             "description": "for tissue repair and recovery.",
             "price": "starting at $150/month",
-            "link": ""
+            "link": "shopify://pages/bpc-157"
           }
         },
         "proto_cjc": {
@@ -72,7 +82,7 @@
             "name": "cjc-1295 / ipamorelin",
             "description": "for sleep, anti-aging, and longevity.",
             "price": "starting at $200/month",
-            "link": ""
+            "link": "shopify://pages/cjc-1295-ipamorelin"
           }
         },
         "proto_tb": {
@@ -81,17 +91,21 @@
             "name": "tb-500",
             "description": "for muscle repair and flexibility.",
             "price": "starting at $150/month",
-            "link": ""
+            "link": "shopify://pages/tb-500"
           }
         }
       },
-      "block_order": ["proto_bpc", "proto_cjc", "proto_tb"]
+      "block_order": [
+        "proto_bpc",
+        "proto_cjc",
+        "proto_tb"
+      ],
+      "settings": {
+        "heading": "three protocols. one platform."
+      }
     },
     "peptly_steps": {
       "type": "peptly-steps",
-      "settings": {
-        "heading": "from questionnaire to delivery in under a week"
-      },
       "blocks": {
         "step_1": {
           "type": "step",
@@ -126,13 +140,18 @@
           }
         }
       },
-      "block_order": ["step_1", "step_2", "step_3", "step_4"]
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4"
+      ],
+      "settings": {
+        "heading": "from questionnaire to delivery in under a week"
+      }
     },
     "peptly_trust": {
       "type": "peptly-trust",
-      "settings": {
-        "heading": "the things we believe matter, we publish"
-      },
       "blocks": {
         "trust_physicians": {
           "type": "trust_item",
@@ -162,7 +181,14 @@
           }
         }
       },
-      "block_order": ["trust_physicians", "trust_pharmacy", "trust_purity"]
+      "block_order": [
+        "trust_physicians",
+        "trust_pharmacy",
+        "trust_purity"
+      ],
+      "settings": {
+        "heading": "the things we believe matter, we publish"
+      }
     },
     "peptly_cta": {
       "type": "peptly-cta",
